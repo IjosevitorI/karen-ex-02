@@ -8,15 +8,15 @@ public class Match{
         action1 = shoto.lightpunch();
         action2 = shinobi.mediumpunch();
         
-        if(shoto.starup < shinobi.starup){
-            shinobi.life -= action1; 
+        if(shoto.getStartup() < shinobi.getStartup()){
+            shinobi.setLife(shinobi.getLife() - action1); 
         }
-        else if(shoto.starup > shinobi.starup){
-            shoto.life -= action2;
+        else if(shoto.getStartup() > shinobi.getStartup()){
+            shoto.setLife(shoto.getLife() - action2);
         }
         else{
-            shinobi.life -= action1;
-            shoto.life -= action2;
+            shinobi.setLife(shinobi.getLife() - action1);
+            shoto.setLife(shoto.getLife() - action2);
         }
     }
 }
