@@ -23,8 +23,10 @@ public class Main {
         System.out.println("Dano da fireball: " + zoner.fireball());
         System.out.println("Dano da sequência de fireball: " + zoner.specialAttack());
 
-        //Character fighter = new Character("Ryu", 1000);
         System.out.println("Dano do soco médio: " + shoto.mediumpunch());
         System.out.println("Dano do ataque especial: " + shoto.specialAttack());
+
+        Fireballuser fireballCharacter = zoner; // Polimorfismo
+        System.out.println("Dano da fireball usando a interface: " + fireballCharacter.fireball());
     }
 }

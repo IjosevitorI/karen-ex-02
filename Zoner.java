@@ -1,4 +1,4 @@
-public class Zoner extends Character{
+public class Zoner extends Character implements Fireballuser{
     private boolean ofencfireball = false;
     
     public Zoner(String nome, double life){
