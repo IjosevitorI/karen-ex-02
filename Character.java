@@ -1,6 +1,7 @@
 public class Character{
     private double life;
     private boolean blocking = false;
+    private boolean grabblocking = false;
     private int startup;
     private String nome;
 
@@ -36,6 +37,14 @@ public class Character{
 
     public void setBlocking(boolean blocking) {
         this.blocking = blocking;
+    }
+
+    public boolean isGrabBlocking() {
+        return grabblocking;
+    }
+
+    public void setGrabBlocking(boolean grabblocking) {
+        this.grabblocking = grabblocking;
     }
     
     public int lightpunch(){
