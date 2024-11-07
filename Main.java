@@ -17,5 +17,14 @@ public class Main {
         System.out.println("Vida do(a) " + grappler.getNome() + ": " + grappler.getLife());
         System.out.println("Vida do(a) " + zoner.getNome() + ": " + zoner.getLife());
         
+        System.out.println("Dano do soco leve: " + grappler.lightpunch());
+        System.out.println("Dano do ataque especial: " + grappler.specialAttack());
+
+        System.out.println("Dano da fireball: " + zoner.fireball());
+        System.out.println("Dano da sequência de fireball: " + zoner.specialAttack());
+
+        //Character fighter = new Character("Ryu", 1000);
+        System.out.println("Dano do soco médio: " + shoto.mediumpunch());
+        System.out.println("Dano do ataque especial: " + shoto.specialAttack());
     }
 }
