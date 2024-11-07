@@ -49,6 +49,7 @@ public class Character{
     
     public int lightpunch(){
         setBlocking(false);
+        setGrabBlocking(false);
         setStartup(4);
         int damage = 30;
         return damage;
@@ -56,6 +57,7 @@ public class Character{
 
     public int mediumpunch(){
         setBlocking(false);
+        setGrabBlocking(false);
         setStartup(6);
         int damage = 60;
         return damage;
@@ -63,6 +65,7 @@ public class Character{
 
     public int heavypunch(){
         setBlocking(false);
+        setGrabBlocking(false);
         setStartup(8);
         int damage = 80;
         return damage;
